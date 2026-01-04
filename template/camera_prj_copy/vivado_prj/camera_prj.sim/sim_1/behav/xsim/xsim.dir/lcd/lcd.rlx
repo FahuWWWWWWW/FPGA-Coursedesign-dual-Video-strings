@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/clk_div.v,1765031147,verilog,,,,clk_div,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd.v,1766163141,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd_driver.v,,lcd,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd_display.v,1765799780,verilog,,,,lcd_display,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd_driver.v,1766162731,verilog,,,,lcd_driver,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd_rgb_char.v,1765204911,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd_display.v,,lcd_rgb_char,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/rd_id.v,1766055658,verilog,,,,rd_id,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,

@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/cmos_capture_data.v,1765031147,verilog,,,,cmos_capture_data,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_dri.v,1765031147,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_ov5640_rgb565_cfg.v,,i2c_dri,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_ov5640_rgb565_cfg.v,1766276983,verilog,,,,i2c_ov5640_rgb565_cfg,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/picture_size.v,1766312239,verilog,,,,picture_size,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,

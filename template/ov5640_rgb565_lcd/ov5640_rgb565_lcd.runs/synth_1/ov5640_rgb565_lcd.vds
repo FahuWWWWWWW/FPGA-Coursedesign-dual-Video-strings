@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Dec 20 20:38:05 2025
+# Process ID         : 5504
+# Current directory  : A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/ov5640_rgb565_lcd.runs/synth_1
+# Command line       : vivado.exe -log ov5640_rgb565_lcd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov5640_rgb565_lcd.tcl
+# Log file           : A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/ov5640_rgb565_lcd.runs/synth_1/ov5640_rgb565_lcd.vds
+# Journal file       : A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/ov5640_rgb565_lcd.runs/synth_1\vivado.jou
+# Running On         : Fahu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16890 MB
+# Swap memory        : 26843 MB
+# Total Virtual      : 43734 MB
+# Available Virtual  : 12782 MB
+#-----------------------------------------------------------
+source ov5640_rgb565_lcd.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/ov5640_rgb565_lcd.srcs/utils_1/imports/synth_1/sdram_rw_test.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/ov5640_rgb565_lcd.srcs/utils_1/imports/synth_1/sdram_rw_test.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ov5640_rgb565_lcd -part xc7a50tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tfgg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8076
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1379.223 ; gain = 496.109
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'SLAVE_ADDR' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:46]
+WARNING: [Synth 8-11065] parameter 'BIT_CTRL' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:47]
+WARNING: [Synth 8-11065] parameter 'CLK_FREQ' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:48]
+WARNING: [Synth 8-11065] parameter 'I2C_FREQ' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:49]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_rgb565_lcd' [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:96]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/ov5640_rgb565_lcd.runs/synth_1/.Xil/Vivado-5504-Fahu/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/ov5640_rgb565_lcd.runs/synth_1/.Xil/Vivado-5504-Fahu/realtime/ila_0_stub.v:6]
+ERROR: [Synth 8-439] module 'pll' not found [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:120]
+ERROR: [Synth 8-6156] failed synthesizing module 'ov5640_rgb565_lcd' [A:/FPGA_Project/FPGA_CourseDesign/ov5640_rgb565_lcd/rtl/ov5640_rgb565_lcd.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1491.652 ; gain = 608.539
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 5 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 20 20:38:23 2025...

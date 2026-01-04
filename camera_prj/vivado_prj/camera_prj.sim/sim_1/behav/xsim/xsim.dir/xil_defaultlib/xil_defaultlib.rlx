@@ -1,0 +1,12 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1766055398,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v,,clk_wiz_0,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1766055398,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.v,1766070258,verilog,,,,clk_wiz_1,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v,1766070258,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.v,,clk_wiz_1_clk_wiz,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,1765124891,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,fifo_generator_0,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/ila_0/sim/ila_0.v,1765115540,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,,ila_0,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sim_1/new/tb_camera.v,1766313358,verilog,,,,tb_camera,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,

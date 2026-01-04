@@ -1,0 +1,1602 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jan  2 16:38:08 2026
+# Process ID         : 57780
+# Current directory  : A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1
+# Command line       : vivado.exe -log top_camera.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_camera.tcl -notrace
+# Log file           : A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera.vdi
+# Journal file       : A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1\vivado.jou
+# Running On         : Fahu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16890 MB
+# Swap memory        : 31196 MB
+# Total Virtual      : 48087 MB
+# Available Virtual  : 4542 MB
+#-----------------------------------------------------------
+source top_camera.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 656.234 ; gain = 204.926
+Command: link_design -top top_camera -part xc7a50tfgg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a50tfgg484-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'u_clk_wiz_hdmi'
+INFO: [Project 1-454] Reading design checkpoint 'a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 912.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 527 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, u_clk_wiz/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_clk_wiz_hdmi/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_clk_wiz/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_clk_wiz_hdmi/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0'
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0'
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz/inst'
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1613.641 ; gain = 575.117
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'u_clk_wiz_hdmi/inst'
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'u_clk_wiz_hdmi/inst'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'u_clk_wiz_hdmi/inst'
+INFO: [Timing 38-2] Deriving generated clocks [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc:54]
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'u_clk_wiz_hdmi/inst'
+Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[7]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[6]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[5]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[4]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[3]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[2]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[1]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[0]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cs_n'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wr_n'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rs'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc]
+Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[31]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[30]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[29]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[28]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[27]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[26]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[25]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[24]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[23]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[22]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[21]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[20]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[19]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[18]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[17]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[16]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[16]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[17]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[18]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[19]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[20]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[21]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[22]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[23]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[24]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[25]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[26]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[27]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[28]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[29]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[30]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[31]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc]
+Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~ *rd_load_extend_cnt_reg* && IS_SEQUENTIAL}'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:83]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_cells -hierarchical -filter {NAME =~ *rd_load_extend_cnt_reg* && IS_SEQUENTIAL}]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:83]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc]
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0'
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[0]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[0]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[0]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[10]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[10]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[10]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[11]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[11]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[11]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[12]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[12]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[12]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[13]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[13]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[13]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[14]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[14]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[14]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[15]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[15]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[15]_i_4' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[1]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[1]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[1]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[2]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[2]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[2]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[3]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[3]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[3]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[4]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[4]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[4]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[5]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[5]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[5]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[6]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[6]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[6]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[7]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[7]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[7]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[8]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[8]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[8]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[9]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[9]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[9]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0'
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[0]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[0]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[0]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[10]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[10]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[10]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[11]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[11]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[11]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[12]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[12]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[12]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[13]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[13]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[13]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[14]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[14]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[14]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[15]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[15]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[15]_i_4' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[1]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[1]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[1]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[2]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[2]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[2]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[3]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[3]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[3]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[4]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[4]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[4]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[5]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[5]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[5]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[6]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[6]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[6]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[7]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[7]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[7]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[8]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[8]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[8]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[9]_i_1' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[9]_i_2' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[9]_i_3' is not a valid endpoint. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc:60]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo/U0'
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1613.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 228 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 36 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 160 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+15 Infos, 144 Warnings, 46 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1613.641 ; gain = 916.848
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a50t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors, 23 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1613.641 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 23b9b3003
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.352 . Memory (MB): peak = 1613.641 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 23b9b3003
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 23b9b3003
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Phase 1 Initialization | Checksum: 23b9b3003
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 23b9b3003
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.325 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 23b9b3003
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.367 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 23b9b3003
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.371 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 43 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 18e1a4f2f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.599 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Retarget | Checksum: 18e1a4f2f
+INFO: [Opt 31-389] Phase Retarget created 8 cells and removed 28 cells
+INFO: [Opt 31-1021] In phase Retarget, 16 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 10db064f1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.676 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Constant propagation | Checksum: 10db064f1
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 12 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2019.160 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Phase 5 Sweep | Checksum: 15b20b8da
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.867 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Sweep | Checksum: 15b20b8da
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 8 cells
+INFO: [Opt 31-1021] In phase Sweep, 28 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 15b20b8da
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2019.160 ; gain = 0.000
+BUFG optimization | Checksum: 15b20b8da
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 15b20b8da
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Shift Register Optimization | Checksum: 15b20b8da
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 15b20b8da
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Post Processing Netlist | Checksum: 15b20b8da
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 16 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: d0af22a5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: d0af22a5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Phase 9 Finalization | Checksum: d0af22a5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               8  |              28  |                                             16  |
+|  Constant propagation         |               0  |               0  |                                             12  |
+|  Sweep                        |               0  |               8  |                                             28  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             16  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: d0af22a5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: d0af22a5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: d0af22a5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2019.160 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2019.160 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: d0af22a5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2019.160 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 144 Warnings, 46 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2019.160 ; gain = 405.520
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_camera_drc_opted.rpt -pb top_camera_drc_opted.pb -rpx top_camera_drc_opted.rpx
+Command: report_drc -file top_camera_drc_opted.rpt -pb top_camera_drc_opted.pb -rpx top_camera_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2019.160 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2019.160 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2034.340 ; gain = 5.949
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2034.340 ; gain = 9.086
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2034.340 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 2039.828 ; gain = 5.488
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2039.828 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2039.828 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.298 . Memory (MB): peak = 2039.828 ; gain = 14.574
+INFO: [Common 17-1381] The checkpoint 'A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a50t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 23 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2043.809 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 7ef063c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2043.809 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2043.809 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'u_ov5640/u_lcd/u_clk_div/u_rdfifo_i_2' is driving clock pin of 97 registers. This could lead to large hold time violations. First few involved registers are:
+	u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[2] {FDCE}
+	u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[0] {FDCE}
+	u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[11] {FDCE}
+	u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[10] {FDCE}
+	u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/gpr1.dout_i_reg[6] {FDCE}
+WARNING: [Place 30-568] A LUT 'u_ov5640/u_lcd/u_clk_div/lcd_pclk_OBUF_inst_i_1' is driving clock pin of 22 registers. This could lead to large hold time violations. First few involved registers are:
+	u_ov5640/u_lcd/u_lcd_driver/cnt_h_reg[2] {FDCE}
+	u_ov5640/u_lcd/u_lcd_driver/cnt_h_reg[4] {FDCE}
+	u_ov5640/u_lcd/u_lcd_driver/cnt_h_reg[9] {FDCE}
+	u_ov5640/u_lcd/u_lcd_driver/cnt_h_reg[5] {FDCE}
+	u_ov5640/u_lcd/u_lcd_driver/cnt_h_reg[0] {FDCE}
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	cam_pclk_IBUF_inst (IBUF.O) is locked to IOB_X0Y51
+	cam_pclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y16
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 101a4b67a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2043.809 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 11d091b3e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 11d091b3e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2049.641 ; gain = 5.832
+Phase 1 Placer Initialization | Checksum: 11d091b3e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 166ae7844
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 15aabfa29
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 12e6643fd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 1d45e9208
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 15b677aae
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 48 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 22 nets or LUTs. Breaked 0 LUT, combined 22 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2049.641 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             22  |                    22  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             22  |                    22  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1f416400e
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2049.641 ; gain = 5.832
+Phase 2.5 Global Place Phase2 | Checksum: 1893d5b71
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2049.641 ; gain = 5.832
+Phase 2 Global Placement | Checksum: 1893d5b71
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1e3b53f7d
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 232e575cb
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1bedd0075
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1cb847126
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1b86b2217
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1d4e93f9b
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 264dd73a1
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1c0fc0847
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1e6137fcf
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 2049.641 ; gain = 5.832
+Phase 3 Detail Placement | Checksum: 1e6137fcf
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 2049.641 ; gain = 5.832
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1595f9f52
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.833 | TNS=-718.896 |
+Phase 1 Physical Synthesis Initialization | Checksum: 141da8b0b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 2066.254 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: bec768e9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 2066.254 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1595f9f52
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2066.254 ; gain = 22.445
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-7.384. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: fad1c4bd
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+Phase 4.1 Post Commit Optimization | Checksum: fad1c4bd
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: fad1c4bd
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: fad1c4bd
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+Phase 4.3 Placer Reporting | Checksum: fad1c4bd
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2066.254 ; gain = 0.000
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 10e5d7684
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+Ending Placer Task | Checksum: 7e670527
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:02:21 . Memory (MB): peak = 2066.254 ; gain = 22.445
+84 Infos, 147 Warnings, 46 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:34 ; elapsed = 00:02:26 . Memory (MB): peak = 2066.254 ; gain = 26.426
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_camera_utilization_placed.rpt -pb top_camera_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file top_camera_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2066.254 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file top_camera_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.256 . Memory (MB): peak = 2066.254 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2080.809 ; gain = 9.055
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2086.246 ; gain = 5.438
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2086.246 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2086.246 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2086.246 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2086.246 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2086.246 ; gain = 11.402
+INFO: [Common 17-1381] The checkpoint 'A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a50t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2086.445 ; gain = 0.199
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 3.00s |  WALL: 2.09s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2086.445 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.384 | TNS=-703.076 |
+Phase 1 Physical Synthesis Initialization | Checksum: bb244251
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2086.445 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.384 | TNS=-703.076 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: bb244251
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2086.445 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.384 | TNS=-703.076 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.340 | TNS=-702.762 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[4].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_IOBUF[7]_inst_i_1
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.337 | TNS=-702.749 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[12].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUFT[20]_inst_i_1
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.330 | TNS=-702.603 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[10].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_IOBUF[15]_inst_i_1
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.327 | TNS=-702.389 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-702.151 |
+INFO: [Physopt 32-702] Processed net u_hdmi_top/u_rgb2dvi_0/serializer_r/serial_data_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_hdmi/inst/clk_out2_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[0].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUFT[3]_inst_i_1
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-702.051 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.952 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.915 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[3].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUFT[6]_inst_i_1
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.863 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.715 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.710 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.664 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.422 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.182 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-701.175 |
+INFO: [Physopt 32-81] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-697.185 |
+INFO: [Physopt 32-81] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-696.737 |
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz/inst/clk_out3_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[10].  Re-placed instance fmc_control1/rd_data_reg_reg[10]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-696.568 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[11].  Re-placed instance fmc_control1/rd_data_reg_reg[11]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-696.399 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[1].  Re-placed instance fmc_control1/rd_data_reg_reg[1]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-696.230 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[9].  Re-placed instance fmc_control1/rd_data_reg_reg[9]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-696.061 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[12].  Re-placed instance fmc_control1/rd_data_reg_reg[12]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-696.030 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[13].  Re-placed instance fmc_control1/rd_data_reg_reg[13]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-695.999 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[14].  Re-placed instance fmc_control1/rd_data_reg_reg[14]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-695.968 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[7].  Re-placed instance fmc_control1/rd_data_reg_reg[7]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-695.937 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[0].  Re-placed instance fmc_control1/rd_data_reg_reg[0]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-695.908 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[2].  Re-placed instance fmc_control1/rd_data_reg_reg[2]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-695.879 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[6].  Re-placed instance fmc_control1/rd_data_reg_reg[6]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-695.850 |
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg_reg[15]_0[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net rst_first.  Re-placed instance rst_first_reg
+INFO: [Physopt 32-735] Processed net rst_first. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-639.495 |
+INFO: [Physopt 32-702] Processed net rst_first. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net u_touch_top/u_touch_dri/rst_first_reg was not replicated.
+INFO: [Physopt 32-663] Processed net u_touch_top/u_touch_dri/rst_first_reg.  Re-placed instance u_touch_top/u_touch_dri/cur_state[7]_i_3__0
+INFO: [Physopt 32-735] Processed net u_touch_top/u_touch_dri/rst_first_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-638.948 |
+INFO: [Physopt 32-571] Net u_touch_top/u_touch_dri/rst_first_reg was not replicated.
+INFO: [Physopt 32-710] Processed net fmc_control1/rd_data_reg. Critical path length was reduced through logic transformation on cell fmc_control1/rd_data_reg[15]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_touch_top/u_touch_dri/rst_first_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-627.999 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_1[14].  Re-placed instance fsmc_tx_data_1_reg[14]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_1[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-627.691 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_2[13].  Re-placed instance fsmc_tx_data_2_reg[13]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_2[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-627.383 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_2[14].  Re-placed instance fsmc_tx_data_2_reg[14]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_2[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-627.075 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_2[6].  Re-placed instance fsmc_tx_data_2_reg[6]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_2[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-626.767 |
+INFO: [Physopt 32-663] Processed net gesture_x_sync[14].  Re-placed instance gesture_x_sync_reg[14]
+INFO: [Physopt 32-735] Processed net gesture_x_sync[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-626.543 |
+INFO: [Physopt 32-663] Processed net gesture_y_sync[13].  Re-placed instance gesture_y_sync_reg[13]
+INFO: [Physopt 32-735] Processed net gesture_y_sync[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-626.319 |
+INFO: [Physopt 32-663] Processed net gesture_y_sync[14].  Re-placed instance gesture_y_sync_reg[14]
+INFO: [Physopt 32-735] Processed net gesture_y_sync[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-626.095 |
+INFO: [Physopt 32-663] Processed net gesture_y_sync[6].  Re-placed instance gesture_y_sync_reg[6]
+INFO: [Physopt 32-735] Processed net gesture_y_sync[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-625.871 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[15]_0[9].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[9]
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[15]_0[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-625.651 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[15]_0[15].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[15]
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[15]_0[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-625.441 |
+INFO: [Physopt 32-571] Net fmc_control1/rd_data_reg was not replicated.
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg.  Re-placed instance fmc_control1/rd_data_reg[15]_i_1_comp
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-625.057 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[15]_0[6].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[6]
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_dout_r_reg[15]_0[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-624.834 |
+INFO: [Physopt 32-571] Net fmc_control1/rd_data_reg was not replicated.
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sys_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_hdmi/inst/clk_out2_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz/inst/clk_out3_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_2.  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_out_en_reg_replica_2
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-624.755 |
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_0[12].  Re-placed instance fsmc_tx_data_0_reg[12]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_0[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-624.539 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_2[1].  Re-placed instance fsmc_tx_data_2_reg[1]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_2[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-624.347 |
+INFO: [Physopt 32-663] Processed net gesture_x_sync[6].  Re-placed instance gesture_x_sync_reg[6]
+INFO: [Physopt 32-735] Processed net gesture_x_sync[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-624.155 |
+INFO: [Physopt 32-663] Processed net gesture_y_sync[15].  Re-placed instance gesture_y_sync_reg[15]
+INFO: [Physopt 32-735] Processed net gesture_y_sync[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-623.963 |
+INFO: [Physopt 32-663] Processed net gesture_x_sync[12].  Re-placed instance gesture_x_sync_reg[12]
+INFO: [Physopt 32-735] Processed net gesture_x_sync[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-623.879 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_6[14].  Re-placed instance fsmc_tx_data_6_reg[14]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_6[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-623.704 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_7[7].  Re-placed instance fsmc_tx_data_7_reg[7]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_7[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-623.529 |
+INFO: [Physopt 32-663] Processed net gesture_x_sync[1].  Re-placed instance gesture_x_sync_reg[1]
+INFO: [Physopt 32-735] Processed net gesture_x_sync[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-623.365 |
+INFO: [Physopt 32-663] Processed net gesture_x_sync[8].  Re-placed instance gesture_x_sync_reg[8]
+INFO: [Physopt 32-735] Processed net gesture_x_sync[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-623.198 |
+INFO: [Physopt 32-663] Processed net gesture_y_sync[2].  Re-placed instance gesture_y_sync_reg[2]
+INFO: [Physopt 32-735] Processed net gesture_y_sync[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-623.023 |
+INFO: [Physopt 32-663] Processed net rd_cnt_sync[14].  Re-placed instance rd_cnt_sync_reg[14]
+INFO: [Physopt 32-735] Processed net rd_cnt_sync[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.848 |
+INFO: [Physopt 32-663] Processed net rd_cnt_sync[6].  Re-placed instance rd_cnt_sync_reg[6]
+INFO: [Physopt 32-735] Processed net rd_cnt_sync[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.673 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_6[0].  Re-placed instance fsmc_tx_data_6_reg[0]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_6[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.522 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_6[1].  Re-placed instance fsmc_tx_data_6_reg[1]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_6[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.371 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_6[2].  Re-placed instance fsmc_tx_data_6_reg[2]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_6[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.224 |
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg_reg[15]_0[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net rst_first. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sys_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.224 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2095.516 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 141e627d4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2095.516 ; gain = 9.070
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.224 |
+INFO: [Physopt 32-702] Processed net u_hdmi_top/u_rgb2dvi_0/serializer_r/serial_data_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_hdmi/inst/clk_out2_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz/inst/clk_out3_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[2]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.291 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[5].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUFT[10]_inst_i_1
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-622.102 |
+INFO: [Physopt 32-702] Processed net u_clk_wiz/inst/clk_out5_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net led_OBUF[0]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net led_OBUF[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-620.816 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-620.665 |
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[0]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-620.907 |
+INFO: [Physopt 32-81] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[1]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-620.731 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-620.331 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-620.009 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-619.980 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-619.945 |
+INFO: [Physopt 32-81] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_1. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-619.587 |
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_7[1].  Re-placed instance fsmc_tx_data_7_reg[1]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_7[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-619.440 |
+INFO: [Physopt 32-663] Processed net rd_cnt_sync[1].  Re-placed instance rd_cnt_sync_reg[1]
+INFO: [Physopt 32-735] Processed net rd_cnt_sync[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-619.288 |
+INFO: [Physopt 32-663] Processed net rd_cnt_sync[2].  Re-placed instance rd_cnt_sync_reg[2]
+INFO: [Physopt 32-735] Processed net rd_cnt_sync[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-619.136 |
+INFO: [Physopt 32-663] Processed net wr_cnt_sync[1].  Re-placed instance wr_cnt_sync_reg[1]
+INFO: [Physopt 32-735] Processed net wr_cnt_sync[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.989 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_0[1].  Re-placed instance fsmc_tx_data_0_reg[1]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.851 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_3[2].  Re-placed instance fsmc_tx_data_3_reg[2]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_3[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.713 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_7[0].  Re-placed instance fsmc_tx_data_7_reg[0]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_7[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.575 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_7[6].  Re-placed instance fsmc_tx_data_7_reg[6]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_7[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.437 |
+INFO: [Physopt 32-663] Processed net wr_cnt_sync[0].  Re-placed instance wr_cnt_sync_reg[0]
+INFO: [Physopt 32-735] Processed net wr_cnt_sync[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.299 |
+INFO: [Physopt 32-663] Processed net wr_cnt_sync[6].  Re-placed instance wr_cnt_sync_reg[6]
+INFO: [Physopt 32-735] Processed net wr_cnt_sync[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.151 |
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg_reg[15]_0[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net rst_first. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net rst_first. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-621.068 |
+INFO: [Physopt 32-702] Processed net rst_first_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net fmc_control1/rd_data_reg was not replicated.
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg.  Re-placed instance fmc_control1/rd_data_reg[15]_i_1_comp
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.829 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[10].  Re-placed instance fmc_control1/rd_data_reg_reg[10]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.703 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[11].  Re-placed instance fmc_control1/rd_data_reg_reg[11]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.577 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[15].  Re-placed instance fmc_control1/rd_data_reg_reg[15]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.451 |
+INFO: [Physopt 32-663] Processed net fmc_control1/rd_data_reg_reg[15]_0[1].  Re-placed instance fmc_control1/rd_data_reg_reg[1]
+INFO: [Physopt 32-735] Processed net fmc_control1/rd_data_reg_reg[15]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.325 |
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg_reg[15]_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net fmc_control1/rd_data_reg was not replicated.
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sys_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_hdmi/inst/clk_out2_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.129 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-618.093 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-617.925 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-617.861 |
+INFO: [Physopt 32-663] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[7].  Re-placed instance u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUFT[12]_inst_i_1
+INFO: [Physopt 32-735] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-617.796 |
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz/inst/clk_out5_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net led_OBUF[0]_repN_1.  Re-placed instance output_mode_hdmi_reg_replica_1
+INFO: [Physopt 32-735] Processed net led_OBUF[0]_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-617.815 |
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/lcd_rgb_OBUF[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz/inst/clk_out3_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_ctrl/Q[2]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_ov5640/u_sdram_top/u_sdram_controller/u_sdram_data/sdram_data_TRI[0]_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_0[8].  Re-placed instance fsmc_tx_data_0_reg[8]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_0[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-617.730 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_1[15].  Re-placed instance fsmc_tx_data_1_reg[15]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_1[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-617.645 |
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_2[15].  Re-placed instance fsmc_tx_data_2_reg[15]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_2[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.265 | TNS=-617.515 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-663] Processed net touch_valid_sync[8].  Re-placed instance touch_valid_sync_reg[8]
+INFO: [Physopt 32-735] Processed net touch_valid_sync[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_0[4].  Re-placed instance fsmc_tx_data_0_reg[4]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_0[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-663] Processed net fsmc_tx_data_6[6].  Re-placed instance fsmc_tx_data_6_reg[6]
+INFO: [Physopt 32-735] Processed net fsmc_tx_data_6[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-702] Processed net fsmc_tx_data_6[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net rst_first_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_touch_top/u_touch_dri/rst_first_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sys_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg_reg[15]_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net fmc_control1/rd_data_reg. Optimizations did not improve timing on the net.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2095.516 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 1f642fd73
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 2095.516 ; gain = 9.070
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2095.516 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-7.265 | TNS=-617.223 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.119  |         85.853  |           13  |              0  |                    98  |           0  |           2  |  00:00:22  |
+|  Total          |          0.119  |         85.853  |           13  |              0  |                    98  |           0  |           3  |  00:00:22  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2095.516 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1be197fd6
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:24 . Memory (MB): peak = 2095.516 ; gain = 9.070
+INFO: [Common 17-83] Releasing license: Implementation
+442 Infos, 147 Warnings, 46 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 2095.516 ; gain = 9.270
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2113.305 ; gain = 8.906
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2118.723 ; gain = 14.324
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2118.723 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2118.723 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2118.723 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2118.723 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2118.723 ; gain = 14.324
+INFO: [Common 17-1381] The checkpoint 'A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a50t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 74a7dac1 ConstDB: 0 ShapeSum: 43302dca RouteDB: 6d8e6c8
+Post Restoration Checksum: NetGraph: 16afa435 | NumContArr: d87be2c5 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2747d7c34
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:47 . Memory (MB): peak = 2187.406 ; gain = 68.684
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2747d7c34
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:47 . Memory (MB): peak = 2187.406 ; gain = 68.684
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2747d7c34
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:47 . Memory (MB): peak = 2187.406 ; gain = 68.684
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2bd0b2574
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2223.059 ; gain = 104.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.913 | TNS=-546.945| WHS=-0.457 | THS=-80.133|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 28fccc540
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:54 . Memory (MB): peak = 2223.059 ; gain = 104.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.913 | TNS=-591.460| WHS=-0.346 | THS=-8.740 |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: 1efc43968
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:54 . Memory (MB): peak = 2223.059 ; gain = 104.336
+
+Phase 2.5 Soft Constraint Pins - Fast Budgeting
+Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 1efc43968
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:54 . Memory (MB): peak = 2252.027 ; gain = 133.305
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0302161 %
+  Global Horizontal Routing Utilization  = 0.0320146 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 3199
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 3194
+  Number of Partially Routed Nets     = 5
+  Number of Node Overlaps             = 1
+
+Phase 2 Router Initialization | Checksum: 21cd92aea
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:54 . Memory (MB): peak = 2252.027 ; gain = 133.305
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 21cd92aea
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:54 . Memory (MB): peak = 2252.027 ; gain = 133.305
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 2f5672ba3
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 2252.027 ; gain = 133.305
+Phase 4 Initial Routing | Checksum: 2f5672ba3
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 2252.027 ; gain = 133.305
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 278
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.913 | TNS=-607.312| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 28b953786
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:02 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.927 | TNS=-605.281| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 2927659e6
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:03 . Memory (MB): peak = 2262.812 ; gain = 144.090
+Phase 5 Rip-up And Reroute | Checksum: 2927659e6
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:03 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1f5be69ab
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:03 . Memory (MB): peak = 2262.812 ; gain = 144.090
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.913 | TNS=-607.312| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 26ad7dc1e
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:03 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 26ad7dc1e
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:03 . Memory (MB): peak = 2262.812 ; gain = 144.090
+Phase 6 Delay and Skew Optimization | Checksum: 26ad7dc1e
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:03 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.913 | TNS=-618.299| WHS=-0.132 | THS=-0.496 |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1f2b80eb6
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 7.2 Non Free Resource Hold Fix Iter
+Phase 7.2 Non Free Resource Hold Fix Iter | Checksum: 1e64b6177
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 2262.812 ; gain = 144.090
+Phase 7 Post Hold Fix | Checksum: 1e64b6177
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.65989 %
+  Global Horizontal Routing Utilization  = 1.69131 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 57.6577%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 45.9459%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 39.7059%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 52.9412%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 1e64b6177
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1e64b6177
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1bbe2c198
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:05 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 11 Post Process Routing
+WARNING: [Route 35-426]  Router was unable to fix hold violation on pins with fixed or dedicated routing. The router cannot add routing detours to improve hold time because the pins fall under one or more of the listed categories: partition pins, fixed routes and intra-site connections.
+Resolution: Run report_timing_summary to analyze the hold violations.
+Phase 11 Post Process Routing | Checksum: 20b639158
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:05 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Phase 12 Post Router Timing
+
+Phase 12.1 Update Timing
+Phase 12.1 Update Timing | Checksum: 20b639158
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 2262.812 ; gain = 144.090
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-6.913 | TNS=-618.299| WHS=-0.132 | THS=-0.496 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 20b639158
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 2262.812 ; gain = 144.090
+Total Elapsed time in route_design: 64.984 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 6c797fb7
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 2262.812 ; gain = 144.090
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 6c797fb7
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 2262.812 ; gain = 144.090
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+458 Infos, 149 Warnings, 46 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:07 . Memory (MB): peak = 2262.812 ; gain = 144.090
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_camera_drc_routed.rpt -pb top_camera_drc_routed.pb -rpx top_camera_drc_routed.rpx
+Command: report_drc -file top_camera_drc_routed.rpt -pb top_camera_drc_routed.pb -rpx top_camera_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2262.812 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_methodology -file top_camera_methodology_drc_routed.rpt -pb top_camera_methodology_drc_routed.pb -rpx top_camera_methodology_drc_routed.rpx
+Command: report_methodology -file top_camera_methodology_drc_routed.rpt -pb top_camera_methodology_drc_routed.pb -rpx top_camera_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_drc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2288.000 ; gain = 25.188
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file top_camera_timing_summary_routed.rpt -pb top_camera_timing_summary_routed.pb -rpx top_camera_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file top_camera_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file top_camera_route_status.rpt -pb top_camera_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file top_camera_power_routed.rpt -pb top_camera_power_summary_routed.pb -rpx top_camera_power_routed.rpx
+Command: report_power -file top_camera_power_routed.rpt -pb top_camera_power_summary_routed.pb -rpx top_camera_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+475 Infos, 151 Warnings, 47 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file top_camera_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file top_camera_bus_skew_routed.rpt -pb top_camera_bus_skew_routed.pb -rpx top_camera_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 2294.977 ; gain = 32.164
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2299.977 ; gain = 0.004
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.400 . Memory (MB): peak = 2316.152 ; gain = 7.227
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.152 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2316.152 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2316.152 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2316.152 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.524 . Memory (MB): peak = 2316.152 ; gain = 7.227
+INFO: [Common 17-1381] The checkpoint 'A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/impl_1/top_camera_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  2 16:43:45 2026...

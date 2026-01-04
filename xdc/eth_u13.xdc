@@ -1,0 +1,17 @@
+#-----------------------------------以太网-----------------------------------------
+create_clock -period 8.000 -name eth_rxc [get_ports eth_rxc]
+create_clock -period 8.000 -name eth_txc [get_ports eth_txc]
+set_property -dict {PACKAGE_PIN W22 IOSTANDARD LVCMOS33} [get_ports eth_rst_n]
+set_property -dict {PACKAGE_PIN Y18 IOSTANDARD LVCMOS33} [get_ports eth_rxc]
+set_property -dict {PACKAGE_PIN AB18 IOSTANDARD LVCMOS33} [get_ports eth_rx_ctl]
+set_property -dict {PACKAGE_PIN AA18 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[0]}]
+set_property -dict {PACKAGE_PIN Y19 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[1]}]
+set_property -dict {PACKAGE_PIN AA19 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[2]}]
+set_property -dict {PACKAGE_PIN AB20 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[3]}]
+
+set_property -dict {PACKAGE_PIN W20 IOSTANDARD LVCMOS33} [get_ports eth_txc]
+set_property -dict {PACKAGE_PIN AA20 IOSTANDARD LVCMOS33} [get_ports eth_tx_ctl]
+set_property -dict {PACKAGE_PIN AB21 IOSTANDARD LVCMOS33} [get_ports {eth_txd[0]}]
+set_property -dict {PACKAGE_PIN AA21 IOSTANDARD LVCMOS33} [get_ports {eth_txd[1]}]
+set_property -dict {PACKAGE_PIN AB22 IOSTANDARD LVCMOS33} [get_ports {eth_txd[2]}]
+set_property -dict {PACKAGE_PIN Y21 IOSTANDARD LVCMOS33} [get_ports {eth_txd[3]}]

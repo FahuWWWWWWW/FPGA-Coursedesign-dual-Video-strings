@@ -1,0 +1,37 @@
+set_property -dict {PACKAGE_PIN P19 IOSTANDARD LVCMOS33} [get_ports iic_scl]
+set_property -dict {PACKAGE_PIN R19 IOSTANDARD LVCMOS33} [get_ports iic_sda]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

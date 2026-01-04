@@ -1,0 +1,755 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jan  2 18:12:06 2026
+# Process ID         : 19288
+# Current directory  : A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1
+# Command line       : vivado.exe -log top_camera.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_camera.tcl
+# Log file           : A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/top_camera.vds
+# Journal file       : A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1\vivado.jou
+# Running On         : Fahu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16890 MB
+# Swap memory        : 31196 MB
+# Total Virtual      : 48087 MB
+# Available Virtual  : 6225 MB
+#-----------------------------------------------------------
+source top_camera.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 657.906 ; gain = 206.402
+Command: read_checkpoint -auto_incremental -incremental A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/utils_1/imports/synth_1/top_camera.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/utils_1/imports/synth_1/top_camera.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_camera -part xc7a50tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tfgg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 55932
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1378.949 ; gain = 496.629
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'SLAVE_ADDR' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:72]
+WARNING: [Synth 8-11065] parameter 'BIT_CTRL' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:73]
+WARNING: [Synth 8-11065] parameter 'CLK_FREQ' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:74]
+WARNING: [Synth 8-11065] parameter 'I2C_FREQ' becomes localparam in 'ov5640_rgb565_lcd' with formal parameter declaration list [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:75]
+WARNING: [Synth 8-6901] identifier 'mode_d1' is used before its declaration [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:89]
+WARNING: [Synth 8-6901] identifier 'mode_d1' is used before its declaration [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:90]
+WARNING: [Synth 8-6901] identifier 'rd_en_int' is used before its declaration [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:90]
+WARNING: [Synth 8-6901] identifier 'MEM_DATA_BITS' is used before its declaration [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/top_camera.v:50]
+WARNING: [Synth 8-6901] identifier 'display_active' is used before its declaration [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/top_camera.v:364]
+WARNING: [Synth 8-6901] identifier 'output_mode_hdmi' is used before its declaration [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/top_camera.v:365]
+INFO: [Synth 8-6157] synthesizing module 'top_camera' from library 'top' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/top_camera.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/.Xil/Vivado-19288-Fahu/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/.Xil/Vivado-19288-Fahu/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/.Xil/Vivado-19288-Fahu/realtime/clk_wiz_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/.Xil/Vivado-19288-Fahu/realtime/clk_wiz_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fmc_control' from library 'fsmc' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/fsmc/fmc_control.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/fsmc/fmc_control.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'fmc_control' from library 'fsmc' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/fsmc/fmc_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'touch_top' from library 'touch' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'i2c_dri_m' from library 'touch' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/i2c_dri_m.v:23]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter I2C_FREQ bound to: 250000 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/i2c_dri_m.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_dri_m' from library 'touch' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/i2c_dri_m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'touch_dri' from library 'touch' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_dri.v:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'touch_dri' from library 'touch' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_dri.v:23]
+INFO: [Synth 8-6157] synthesizing module 'touch_event' from library 'touch' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_event.v:18]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter SINGLE_CLICK_DELAY bound to: 1000000 - type: integer 
+	Parameter DOUBLE_CLICK_WINDOW bound to: 10000000 - type: integer 
+	Parameter LONG_PRESS_THRESH bound to: 25000000 - type: integer 
+	Parameter COORD_OFFSET bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'touch_event' from library 'touch' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_event.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'touch_top' from library 'touch' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_top_xga' from library 'hdmi' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/hdmi_top_xga.v:2]
+INFO: [Synth 8-6157] synthesizing module 'video_driver_hdmi' from library 'hdmi' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/video_driver_hdmi.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'video_driver_hdmi' from library 'hdmi' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/video_driver_hdmi.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dvi_transmitter_top' from library 'hdmi' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/dvi_transmitter_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' from library 'hdmi' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/asyn_rst_syn.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' from library 'hdmi' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/asyn_rst_syn.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dvi_encoder' from library 'hdmi' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/dvi_encoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_encoder' from library 'hdmi' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/dvi_encoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' from library 'hdmi' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/serializer_10_to_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' from library 'hdmi' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/serializer_10_to_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104275]
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104275]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_transmitter_top' from library 'hdmi' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/dvi_transmitter_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_top_xga' from library 'hdmi' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/hdmi/hdmi_top_xga.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_rgb565_lcd' from library 'top' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lcd' from library 'lcd' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rd_id' from library 'lcd' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/rd_id.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'rd_id' from library 'lcd' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/rd_id.v:28]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' from library 'lcd' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/clk_div.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' from library 'lcd' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/clk_div.v:28]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' from library 'lcd' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd_driver.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' from library 'lcd' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd_driver.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'lcd' from library 'lcd' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/lcd/lcd.v:1]
+INFO: [Synth 8-6157] synthesizing module 'picture_size' from library 'ov5640' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/picture_size.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'picture_size' from library 'ov5640' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/picture_size.v:22]
+INFO: [Synth 8-6157] synthesizing module 'i2c_ov5640_rgb565_cfg' from library 'ov5640' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_ov5640_rgb565_cfg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_ov5640_rgb565_cfg' from library 'ov5640' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_ov5640_rgb565_cfg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'i2c_dri' from library 'ov5640' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_dri.v:22]
+	Parameter SLAVE_ADDR bound to: 7'b0111100 
+	Parameter CLK_FREQ bound to: 27'b101111101011110000100000000 
+	Parameter I2C_FREQ bound to: 18'b111101000010010000 
+INFO: [Synth 8-155] case statement is not full and has no default [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_dri.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_dri' from library 'ov5640' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/i2c_dri.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cmos_capture_data' from library 'ov5640' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/cmos_capture_data.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cmos_capture_data' from library 'ov5640' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/ov5640/cmos_capture_data.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sdram_top' from library 'sdram' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_top.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:107905]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:107905]
+INFO: [Synth 8-6157] synthesizing module 'sdram_fifo_ctrl' from library 'sdram' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_fifo_ctrl.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/.Xil/Vivado-19288-Fahu/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/.Xil/Vivado-19288-Fahu/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_fifo_ctrl' from library 'sdram' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_fifo_ctrl.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sdram_controller' from library 'sdram' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_controller.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sdram_ctrl' from library 'sdram' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_ctrl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_ctrl' from library 'sdram' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_ctrl.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sdram_cmd' from library 'sdram' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_cmd.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_cmd' from library 'sdram' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_cmd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sdram_data' from library 'sdram' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_data.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sdram_data' from library 'sdram' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_data.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_controller' from library 'sdram' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_controller.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_top' from library 'sdram' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_top.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_rgb565_lcd' from library 'top' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/ov5640_rgb565_lcd.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_camera' from library 'top' (0#1) [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/top_camera.v:22]
+WARNING: [Synth 8-7137] Register rd_data_reg_reg in module fmc_control has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/fsmc/fmc_control.v:87]
+WARNING: [Synth 8-7137] Register sdram_rd_wr_reg in module sdram_ctrl has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/sdram/sdram_ctrl.v:75]
+WARNING: [Synth 8-3848] Net sys_init_done in module/entity top_camera does not have driver. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/new/top_camera.v:145]
+WARNING: [Synth 8-3917] design top_camera has port exio[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_camera has port exio[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_camera has port exio[1] driven by constant 0
+WARNING: [Synth 8-7129] Port cnt_clk[9] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[8] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[7] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[6] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[5] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[4] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[3] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[2] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[1] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[0] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_wraddr[23] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_wraddr[22] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_wraddr[21] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_rdaddr[23] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_rdaddr[22] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_rdaddr[21] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[7] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[6] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[5] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[4] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[3] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[2] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[1] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[0] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_h_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[11] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module picture_size is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[22] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[21] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[20] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[19] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[18] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[17] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[16] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[14] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[13] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[12] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[11] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[10] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[9] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[8] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[6] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[5] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[4] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[3] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[2] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[1] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[0] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_int_in in module touch_dri is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_flip_horizontal in module top_camera is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_flip_vertical in module top_camera is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_flip_color in module top_camera is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1524.820 ; gain = 642.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1524.820 ; gain = 642.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1524.820 ; gain = 642.500
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1524.820 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo'
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo'
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_ov5640/u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz'
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz'
+Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'u_clk_wiz_hdmi'
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc:1]
+Finished Parsing XDC File [a:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'u_clk_wiz_hdmi'
+Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cam_pclk_IBUF'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[7]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[6]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[5]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[4]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[3]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[2]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[1]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'mcu_data[0]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'cs_n'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'wr_n'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'rs'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc:143]
+Finished Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_camera_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_camera_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_camera_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[31]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[30]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[29]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[28]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[27]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[26]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[25]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[24]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[23]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[22]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[21]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[20]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[19]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[18]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[17]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[16]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[16]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[17]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[18]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[19]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[20]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[21]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[22]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[23]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[24]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[25]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[26]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[27]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[28]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[29]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[30]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[31]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc:105]
+Finished Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_camera_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/sdram.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_camera_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_camera_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -quiet -include_generated_clocks {clk_out1_clk_wiz_0 clk_out2_clk_wiz_0 clk_out3_clk_wiz_0 clk_out4_clk_wiz_0 clk_out5_clk_wiz_0}]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -quiet -include_generated_clocks {clk_out1_clk_wiz_1 clk_out2_clk_wiz_1}]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -quiet -include_generated_clocks {*dri_clk* *clk_lcd*}]'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~ *rd_load_extend_cnt_reg* && IS_SEQUENTIAL}'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:88]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~ *u_sdram_top*u_rdfifo*rst* || NAME =~ *fifo_gen*rst*}'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:88]
+WARNING: [Vivado 12-508] No pins matched 'u_clk_wiz/inst/mmcm_adv_inst/CLKOUT2'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:119]
+WARNING: [Vivado 12-508] No pins matched 'u_clk_wiz/inst/mmcm_adv_inst/CLKOUT4'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:120]
+WARNING: [Vivado 12-508] No pins matched 'u_clk_wiz*/inst/mmcm_adv_inst/LOCKED'. [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc:125]
+Finished Parsing XDC File [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/constrs_1/imports/xdc/async_clocks.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_camera_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1611.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1611.523 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1611.523 ; gain = 729.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1611.523 ; gain = 729.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1611.523 ; gain = 729.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'i2c_dri_m'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'touch_dri'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'touch_event'
+INFO: [Synth 8-802] inferred FSM for state register 'state_33m_0_reg' in module 'clk_div'
+INFO: [Synth 8-802] inferred FSM for state register 'state_33m_1_reg' in module 'clk_div'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'i2c_dri'
+INFO: [Synth 8-802] inferred FSM for state register 'init_state_reg' in module 'sdram_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'work_state_reg' in module 'sdram_ctrl'
+WARNING: [Synth 8-327] inferring latch for variable 'addr' [A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/fsmc/fmc_control.v:89]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                         00000001 |                         00000001
+               st_sladdr |                         00000010 |                         00000010
+               st_addr16 |                         00000100 |                         00000100
+                st_addr8 |                         00001000 |                         00001000
+              st_data_wr |                         00010000 |                         00010000
+              st_addr_rd |                         00100000 |                         00100000
+              st_data_rd |                         01000000 |                         01000000
+                 st_stop |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'i2c_dri_m'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                          0000001 |                          0000001
+                 st_init |                          0000010 |                          0000010
+               st_get_id |                          0000100 |                          0000100
+              st_cfg_reg |                          0001000 |                          0001000
+          st_check_touch |                          0010000 |                          0010000
+            st_get_coord |                          0100000 |                          0100000
+         st_coord_handle |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'touch_dri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              STATE_IDLE |                             0001 |                             0001
+           STATE_PRESSED |                             0010 |                             0010
+         STATE_LONGPRESS |                             1000 |                             1000
+          STATE_RELEASED |                             0100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'touch_event'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_33m_1_reg' in module 'clk_div', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_33m_0_reg' in module 'clk_div', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                         00000001 |                         00000001
+               st_sladdr |                         00000010 |                         00000010
+               st_addr16 |                         00000100 |                         00000100
+                st_addr8 |                         00001000 |                         00001000
+              st_data_wr |                         00010000 |                         00010000
+              st_addr_rd |                         00100000 |                         00100000
+              st_data_rd |                         01000000 |                         01000000
+                 st_stop |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'i2c_dri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                    0000000100000 |                             0000
+                 iSTATE2 |                    0000010000000 |                             1011
+                 iSTATE3 |                    0000001000000 |                             1100
+                 iSTATE5 |                    0001000000000 |                             0001
+                 iSTATE1 |                    0000000001000 |                             0010
+                  iSTATE |                    0000000000001 |                             0011
+                 iSTATE0 |                    0000000000010 |                             0100
+                iSTATE11 |                    0000000000100 |                             0101
+                iSTATE10 |                    0000000010000 |                             0110
+                 iSTATE7 |                    0010000000000 |                             0111
+                 iSTATE9 |                    0100000000000 |                             1000
+                 iSTATE8 |                    1000000000000 |                             1001
+                 iSTATE4 |                    0000100000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'work_state_reg' using encoding 'one-hot' in module 'sdram_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                            00000
+                 iSTATE0 |                              001 |                            00001
+                 iSTATE1 |                              010 |                            00010
+                 iSTATE3 |                              011 |                            00011
+                 iSTATE2 |                              100 |                            00100
+                 iSTATE4 |                              101 |                            00101
+                 iSTATE5 |                              110 |                            00110
+                 iSTATE6 |                              111 |                            00111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'init_state_reg' using encoding 'sequential' in module 'sdram_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1611.523 ; gain = 729.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   24 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 2     
+	   4 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 11    
+	   3 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 3     
+	   5 Input    5 Bit       Adders := 6     
+	   4 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 43    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               16 Bit    Registers := 65    
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 6     
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 96    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 9     
+	   2 Input   21 Bit        Muxes := 3     
+	   7 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 13    
+	   8 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 2     
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 11    
+	   2 Input   11 Bit        Muxes := 11    
+	   6 Input   11 Bit        Muxes := 3     
+	   9 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 12    
+	   5 Input   10 Bit        Muxes := 3     
+	   6 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 31    
+	   9 Input    8 Bit        Muxes := 4     
+	   8 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 16    
+	   6 Input    7 Bit        Muxes := 2     
+	   9 Input    7 Bit        Muxes := 2     
+	   8 Input    7 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   6 Input    6 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 19    
+	   2 Input    4 Bit        Muxes := 10    
+	   7 Input    4 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 14    
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 10    
+	   4 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 161   
+	  16 Input    1 Bit        Muxes := 17    
+	  29 Input    1 Bit        Muxes := 15    
+	  22 Input    1 Bit        Muxes := 12    
+	  31 Input    1 Bit        Muxes := 13    
+	  33 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 15    
+	   9 Input    1 Bit        Muxes := 26    
+	   7 Input    1 Bit        Muxes := 15    
+	   8 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 6     
+	  10 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top_camera has port exio[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_camera has port exio[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_camera has port exio[1] driven by constant 0
+WARNING: [Synth 8-7129] Port sdram_wr_addr[23] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_wr_addr[22] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_wr_addr[21] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_rd_addr[23] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_rd_addr[22] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_rd_addr[21] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[7] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[6] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[5] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[4] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[3] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[2] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[1] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[0] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_h_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[11] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module picture_size is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_int_in in module touch_dri is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_flip_horizontal in module top_camera is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_flip_vertical in module top_camera is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_flip_color in module top_camera is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1613.445 ; gain = 731.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|i2c_dri_m   | sda_out             | 64x1          | LUT            | 
+|i2c_dri_m   | scl                 | 64x1          | LUT            | 
+|i2c_dri_m   | scl                 | 64x1          | LUT            | 
+|i2c_dri     | scl                 | 64x1          | LUT            | 
+|i2c_dri     | scl                 | 64x1          | LUT            | 
+|i2c_dri     | sda_out             | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri_m/sda_out | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri_m/scl     | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri_m/scl     | 64x1          | LUT            | 
+|i2c_dri     | scl                 | 64x1          | LUT            | 
+|i2c_dri     | scl                 | 64x1          | LUT            | 
+|i2c_dri     | sda_out             | 64x1          | LUT            | 
++------------+---------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1733.543 ; gain = 851.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1775.266 ; gain = 892.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 1778.648 ; gain = 896.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_wiz_0        |         1|
+|2     |clk_wiz_1        |         1|
+|3     |fifo_generator_0 |         2|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |clk_wiz          |     2|
+|3     |fifo_generator   |     1|
+|4     |fifo_generator_0 |     1|
+|5     |BUFG             |     3|
+|6     |CARRY4           |   133|
+|7     |LUT1             |    83|
+|8     |LUT2             |   186|
+|9     |LUT3             |   165|
+|10    |LUT4             |   334|
+|11    |LUT5             |   295|
+|12    |LUT6             |   609|
+|13    |MUXF7            |    42|
+|14    |MUXF8            |     1|
+|15    |ODDR             |     1|
+|16    |OSERDESE2        |     8|
+|18    |FDCE             |  1207|
+|19    |FDPE             |    35|
+|20    |FDRE             |    81|
+|21    |FD               |     2|
+|22    |LD               |    16|
+|23    |IBUF             |    16|
+|24    |IOBUF            |    36|
+|25    |OBUF             |    34|
+|26    |OBUFDS           |     4|
+|27    |OBUFT            |    23|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:36 . Memory (MB): peak = 1980.262 ; gain = 1011.238
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 1980.262 ; gain = 1097.941
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1985.449 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 235 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1992.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 54 instances were transformed.
+  FD_1 => FDRE (inverted pins: C): 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 36 instances
+  LD => LDCE: 16 instances
+
+Synth Design complete | Checksum: fb68d369
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 150 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:52 . Memory (MB): peak = 1992.977 ; gain = 1295.344
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1992.977 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.runs/synth_1/top_camera.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_camera_utilization_synth.rpt -pb top_camera_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  2 18:14:25 2026...

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../dig_volt.srcs/sources_1/new/adc.v" \
+"../../../../dig_volt.srcs/sources_1/new/seg_dynamic/bcd_8421.v" \
+"../../../../dig_volt.srcs/sources_1/new/freq.v" \
+"../../../../dig_volt.srcs/sources_1/new/key.v" \
+"../../../../dig_volt.srcs/sources_1/new/seg_dynamic/seg_dynamic.v" \
+"../../../../dig_volt.srcs/sources_1/new/top_scope.v" \
+"../../../../dig_volt.srcs/sim_1/new/tb_top_scope.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

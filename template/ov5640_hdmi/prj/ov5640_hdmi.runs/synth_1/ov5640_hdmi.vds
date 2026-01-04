@@ -1,0 +1,581 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Dec  7 13:05:57 2025
+# Process ID         : 30340
+# Current directory  : A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1
+# Command line       : vivado.exe -log ov5640_hdmi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov5640_hdmi.tcl
+# Log file           : A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1/ov5640_hdmi.vds
+# Journal file       : A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1\vivado.jou
+# Running On         : Fahu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16890 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 36218 MB
+# Available Virtual  : 6833 MB
+#-----------------------------------------------------------
+source ov5640_hdmi.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 656.727 ; gain = 205.449
+Command: synth_design -top ov5640_hdmi -part xc7a50tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10316
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1355.449 ; gain = 495.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'pixel_clk', assumed default net type 'wire' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:150]
+INFO: [Synth 8-11241] undeclared symbol 'pixel_clk_5x', assumed default net type 'wire' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:182]
+WARNING: [Synth 8-11065] parameter 'V_CMOS_DISP' becomes localparam in 'ov5640_hdmi' with formal parameter declaration list [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:65]
+WARNING: [Synth 8-11065] parameter 'H_CMOS_DISP' becomes localparam in 'ov5640_hdmi' with formal parameter declaration list [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:66]
+WARNING: [Synth 8-11065] parameter 'TOTAL_H_PIXEL' becomes localparam in 'ov5640_hdmi' with formal parameter declaration list [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:67]
+WARNING: [Synth 8-11065] parameter 'TOTAL_V_PIXEL' becomes localparam in 'ov5640_hdmi' with formal parameter declaration list [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:68]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_hdmi' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_dri' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_dri.v:24]
+INFO: [Synth 8-6157] synthesizing module 'i2c_ov5640_rgb565_cfg' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/i2c_ov5640_rgb565_cfg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_ov5640_rgb565_cfg' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/i2c_ov5640_rgb565_cfg.v:24]
+INFO: [Synth 8-6157] synthesizing module 'i2c_dri' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/i2c_dri.v:24]
+	Parameter SLAVE_ADDR bound to: 7'b0111100 
+	Parameter CLK_FREQ bound to: 27'b010111110101111000010000000 
+	Parameter I2C_FREQ bound to: 18'b111101000010010000 
+INFO: [Synth 8-155] case statement is not full and has no default [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/i2c_dri.v:198]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_dri' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/i2c_dri.v:24]
+WARNING: [Synth 8-7071] port 'i2c_ack' of module 'i2c_dri' is unconnected for instance 'u_i2c_dr' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_dri.v:99]
+WARNING: [Synth 8-7023] instance 'u_i2c_dr' of module 'i2c_dri' has 13 connections declared, but only 12 given [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_dri.v:99]
+INFO: [Synth 8-6157] synthesizing module 'cmos_capture_data' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/cmos_capture_data.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cmos_capture_data' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/cmos_capture_data.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_dri' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_dri.v:24]
+WARNING: [Synth 8-7071] port 'cam_init_done' of module 'ov5640_dri' is unconnected for instance 'u_ov5640_dri' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:105]
+WARNING: [Synth 8-7023] instance 'u_ov5640_dri' of module 'ov5640_dri' has 20 connections declared, but only 19 given [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:105]
+INFO: [Synth 8-6157] synthesizing module 'sdram_top' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_top.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sdram_fifo_ctrl' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_fifo_ctrl.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1/.Xil/Vivado-30340-Fahu/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1/.Xil/Vivado-30340-Fahu/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_fifo_ctrl' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_fifo_ctrl.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sdram_controller' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_controller.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sdram_ctrl' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_ctrl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_ctrl' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_ctrl.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sdram_cmd' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_cmd.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_cmd' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_cmd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sdram_data' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_data.v:22]
+	Parameter MEM_DATA_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sdram_data' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_data.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_controller' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_controller.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_top' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 7.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 15 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_top' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/hdmi_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'video_driver' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/video_driver.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'video_driver' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/video_driver.v:24]
+WARNING: [Synth 8-689] width (24) of port connection 'video_rgb' does not match port width (16) of module 'video_driver' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/hdmi_top.v:64]
+INFO: [Synth 8-6157] synthesizing module 'dvi_transmitter_top' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/dvi_transmitter_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/asyn_rst_syn.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/asyn_rst_syn.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dvi_encoder' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/dvi_encoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_encoder' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/dvi_encoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/serializer_10_to_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/serializer_10_to_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104275]
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [A:/Vivado/XILINX/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104275]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_transmitter_top' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/dvi_transmitter_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_top' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/hdmi_top.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_hdmi' (0#1) [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/ov5640_hdmi.v:24]
+WARNING: [Synth 8-7137] Register sdram_rd_wr_reg in module sdram_ctrl has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/rtl/sdram/sdram_ctrl.v:75]
+WARNING: [Synth 8-7129] Port cnt_clk[9] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[8] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[7] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[6] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[5] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[4] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[3] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[2] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[1] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk[0] in module sdram_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_wraddr[23] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_wraddr[22] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_wraddr[21] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_rdaddr[23] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_rdaddr[22] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sys_rdaddr[21] in module sdram_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[7] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[6] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[5] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[4] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[3] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[2] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[1] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[0] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_h_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[11] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1480.879 ; gain = 620.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1480.879 ; gain = 620.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1480.879 ; gain = 620.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1480.879 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo'
+Finished Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo'
+Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo'
+Finished Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo'
+Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [a:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov5640_hdmi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ov5640_hdmi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/pin.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/pin.xdc:1]
+WARNING: [Vivado 12-507] No nets matched 'cam_pclk_IBUF'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/pin.xdc:23]
+Finished Parsing XDC File [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/pin.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/pin.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ov5640_hdmi_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov5640_hdmi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ov5640_hdmi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[31]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[30]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[29]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[28]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[27]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[26]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[25]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[24]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[23]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[22]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[21]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[20]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[19]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[18]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[17]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[16]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[16]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[17]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[18]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[19]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[20]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[21]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[22]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[23]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[24]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[25]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[26]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[27]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[28]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[29]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[30]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'sdram_data[31]'. [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc:105]
+Finished Parsing XDC File [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ov5640_hdmi_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.srcs/constrs_1/new/sdram.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov5640_hdmi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ov5640_hdmi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov5640_hdmi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ov5640_hdmi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1552.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1552.484 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_sdram_top/u_sdram_fifo_ctrl/u_rdfifo' at clock pin 'wr_clk' is different from the actual clock period '7.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_sdram_top/u_sdram_fifo_ctrl/u_wrfifo' at clock pin 'rd_clk' is different from the actual clock period '7.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1552.484 ; gain = 692.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1552.484 ; gain = 692.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1552.484 ; gain = 692.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'i2c_dri'
+INFO: [Synth 8-802] inferred FSM for state register 'init_state_reg' in module 'sdram_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'work_state_reg' in module 'sdram_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                         00000001 |                         00000001
+               st_sladdr |                         00000010 |                         00000010
+               st_addr16 |                         00000100 |                         00000100
+                st_addr8 |                         00001000 |                         00001000
+              st_data_wr |                         00010000 |                         00010000
+              st_addr_rd |                         00100000 |                         00100000
+              st_data_rd |                         01000000 |                         01000000
+                 st_stop |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'i2c_dri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                    0000000100000 |                             0000
+                 iSTATE2 |                    0000010000000 |                             1011
+                 iSTATE3 |                    0000001000000 |                             1100
+                 iSTATE5 |                    0001000000000 |                             0001
+                 iSTATE1 |                    0000000001000 |                             0010
+                  iSTATE |                    0000000000001 |                             0011
+                 iSTATE0 |                    0000000000010 |                             0100
+                iSTATE11 |                    0000000000100 |                             0101
+                iSTATE10 |                    0000000010000 |                             0110
+                 iSTATE7 |                    0010000000000 |                             0111
+                 iSTATE9 |                    0100000000000 |                             1000
+                 iSTATE8 |                    1000000000000 |                             1001
+                 iSTATE4 |                    0000100000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'work_state_reg' using encoding 'one-hot' in module 'sdram_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                            00000
+                 iSTATE0 |                              001 |                            00001
+                 iSTATE1 |                              010 |                            00010
+                 iSTATE3 |                              011 |                            00011
+                 iSTATE2 |                              100 |                            00100
+                 iSTATE4 |                              101 |                            00101
+                 iSTATE5 |                              110 |                            00110
+                 iSTATE6 |                              111 |                            00111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'init_state_reg' using encoding 'sequential' in module 'sdram_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1552.484 ; gain = 692.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   24 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 4     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   5 Input    5 Bit       Adders := 6     
+	   4 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 5     
+	   8 Input    4 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               24 Bit    Registers := 3     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 11    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 57    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 8     
+	   2 Input   21 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 2     
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 11    
+	   2 Input   11 Bit        Muxes := 4     
+	   6 Input   11 Bit        Muxes := 1     
+	   9 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 9     
+	   5 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 8     
+	   9 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 6     
+	   6 Input    7 Bit        Muxes := 1     
+	   9 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 15    
+	   2 Input    4 Bit        Muxes := 4     
+	  13 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 64    
+	  31 Input    1 Bit        Muxes := 6     
+	  29 Input    1 Bit        Muxes := 6     
+	  22 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 6     
+	  33 Input    1 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 14    
+	  10 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port sdram_wr_addr[23] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_wr_addr[22] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_wr_addr[21] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_rd_addr[23] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_rd_addr[22] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdram_rd_addr[21] in module sdram_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[7] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[6] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[5] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[4] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[3] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[2] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[1] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i2c_data_r[0] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_h_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[12] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmos_v_pixel[11] in module i2c_ov5640_rgb565_cfg is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1564.980 ; gain = 704.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|i2c_dri     | scl              | 64x1          | LUT            | 
+|i2c_dri     | scl              | 64x1          | LUT            | 
+|i2c_dri     | sda_out          | 64x1          | LUT            | 
+|ov5640_dri  | u_i2c_dr/scl     | 64x1          | LUT            | 
+|ov5640_dri  | u_i2c_dr/scl     | 64x1          | LUT            | 
+|ov5640_dri  | u_i2c_dr/sda_out | 64x1          | LUT            | 
++------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1687.047 ; gain = 826.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1725.520 ; gain = 865.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1726.680 ; gain = 866.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |fifo_generator_0 |         2|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |fifo_generator   |     1|
+|2     |fifo_generator_0 |     1|
+|3     |BUFG             |     8|
+|4     |CARRY4           |    31|
+|5     |LUT1             |    27|
+|6     |LUT2             |   143|
+|7     |LUT3             |    56|
+|8     |LUT4             |    88|
+|9     |LUT5             |   134|
+|10    |LUT6             |   325|
+|11    |MMCME2_ADV       |     1|
+|12    |MUXF7            |    16|
+|13    |OSERDESE2        |     8|
+|15    |FDCE             |   319|
+|16    |FDPE             |    24|
+|17    |FDRE             |    63|
+|18    |IBUF             |    13|
+|19    |IOBUF            |    16|
+|20    |OBUF             |    20|
+|21    |OBUFDS           |     4|
+|22    |OBUFT            |     1|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:54 . Memory (MB): peak = 1935.316 ; gain = 1003.559
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1935.316 ; gain = 1075.164
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1937.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 68 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1944.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Synth Design complete | Checksum: 6a3f4a41
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 1944.688 ; gain = 1274.973
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1944.688 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'A:/FPGA/Vivado/A7/K9_F407/example/40_ov5640_hdmi/prj/ov5640_hdmi.runs/synth_1/ov5640_hdmi.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ov5640_hdmi_utilization_synth.rpt -pb ov5640_hdmi_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  7 13:07:24 2025...

@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/i2c_dri_m.v,1764954407,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_dri.v,,i2c_dri_m,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_dri.v,1764954407,verilog,,A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_top.v,,touch_dri,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_event.v,1766067793,verilog,,,,touch_event,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
+A:/FPGA_Project/FPGA_CourseDesign/camera_prj/vivado_prj/camera_prj.srcs/sources_1/imports/bsp/touch/touch_top.v,1765453169,verilog,,,,touch_top,,,../../../../../../../../Vivado/XILINX/2025.1/Vivado/data/rsb/busdef;../../../../camera_prj.ip_user_files/ipstatic,,,,,
